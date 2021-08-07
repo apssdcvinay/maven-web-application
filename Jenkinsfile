@@ -12,6 +12,7 @@ stage('Build')
 {
 sh "${mavenHome}/bin/mvn clean package"
 }
+/*
 stage('sonar')
 {
 sh "${mavenHome}/bin/mvn sonar:sonar"
@@ -31,4 +32,5 @@ stage('mail')
 emailext body: '''Regards 
 K Vinay''', subject: 'Build over', to: 'karnatakavinay6@gmail.com'
 }
+*/
 }
